@@ -1,0 +1,40 @@
+# ~/.config/starship.toml
+
+# Global Configuration
+format = "in [$directory](bold #cba6f7)\n$git_branch [>](bold #cba6f7) "
+
+add_newline = true
+
+# Time
+[time]
+format = "[󱑃 $time]($style)"
+style = "bold #a6e3a1"
+use_12hr = true
+disabled = false
+
+# Directory Module
+[directory]
+style = "bold #cba6fa"
+format = "$path"
+read_only = " "
+truncate_to_repo = true
+disabled = false
+
+# Git Module
+[git_branch]
+symbol = "  "
+format = "[$symbol$branch]($style)"
+style = "bold #cba6f7"
+disabled = false
+
+# Sudo
+[sudo]
+style = "bold #cba6f7"
+disabled = false
+
+# Username
+[username]
+style_root = "bold #cba6f7"
+style_user = "bold #cba6f7"
+format = "[$user]($style)"
+show_always = true
