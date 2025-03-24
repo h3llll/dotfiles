@@ -1,0 +1,1 @@
+barely configured configuration
