@@ -7,3 +7,11 @@
 !polybar
 !rofi
 !picom
+
+!scripts/**
+!.gitignore
+!nvim/**
+!i3/**
+!polybar/**
+!rofi/**
+!picom/**
