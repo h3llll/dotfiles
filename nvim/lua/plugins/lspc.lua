@@ -60,6 +60,9 @@ return {
             lspc.mesonlsp.setup({
                 capabilities = capbs,
             })
+            lspc.bashls.setup({
+                capabilities = capbs,
+            })
         end,
     },
 }

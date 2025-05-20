@@ -1,1 +1,9 @@
-mutt
+*
+
+!scripts
+!.gitignore
+!nvim
+!i3
+!polybar
+!rofi
+!picom
