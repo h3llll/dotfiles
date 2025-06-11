@@ -1,0 +1,31 @@
+# Launch keynav with Ctrl+Alt+K
+ctrl+alt+k start
+
+# Basic navigation keys
+
+# Navigation within the grid
+h cut-left
+j cut-down
+k cut-up
+l cut-right
+
+shift+h move-left
+shift+j move-down
+shift+k move-up
+shift+l move-right
+
+i click 5
+o click 4
+
+w click 1
+e click 3
+
+# Refine selection
+space cut
+
+# Move cursor to selected area
+Return warp
+
+# Cancel keynav
+q end
+

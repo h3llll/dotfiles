@@ -34,7 +34,7 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls",
+                    "luau_lsp",
                     "clangd",
                     "mesonlsp",
                     "zls",
@@ -48,7 +48,7 @@ return {
             local capbs = require("cmp_nvim_lsp").default_capabilities()
 
             local lspc = require("lspconfig")
-            lspc.lua_ls.setup({
+            lspc.luau_lsp.setup({
                 capabilities = capbs,
             })
             lspc.clangd.setup({

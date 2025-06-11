@@ -52,12 +52,14 @@ gaps    outer       10
 gaps    top         50
 
 # terminal
-set     $TERMINAL   tabbedst
+set     $TERMINAL   st
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 # EXECS:
 exec_always --no-startup-id $HOME/scripts/polybar/init.sh
 exec_always --no-startup-id $HOME/scripts/picom/init.sh
+exec_always --no-startup-id $HOME/scripts/feh/init.sh
+exec_always --no-startup-id $HOME/scripts/keynav/init.sh
 
 # SETTINGS:
 
@@ -67,11 +69,14 @@ for_window          [class="Polybar"]   floating    enable
 for_window          [class="Polybar"]   border      none
 for_window          [class="Polybar"]   move        position    0   0
 
+# making my app float automatically for ease of development
+for_window [class="hi"] floating enable
+
 # font
 font                pango:monospace     10
 
 # border size
-for_window          [class=".*"]        border      pixel       3
+for_window          [class=".*"]        border      pixel       0
 
 # network manager
 exec                --no-startup-id nm-applet
