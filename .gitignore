@@ -1,18 +1,24 @@
 *
 
 !README.md
-!scripts
 !.gitignore
-!nvim
-!i3
-!polybar
-!rofi
-!picom
 
-!scripts/**
-!.gitignore
-!nvim/**
-!i3/**
-!polybar/**
-!rofi/**
-!picom/**
+!bash
+!bat
+!htop
+!keynav
+!lf
+!neofetch
+!suckless
+!starship.toml
+!setup_new.sh
+
+!bash/**
+!bat/**
+!htop/**
+!keynav/**
+!lf/**
+!neofetch/**
+!suckless/**
+!starship.toml/**
+!setup_new.sh/**
