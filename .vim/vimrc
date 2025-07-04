@@ -1,0 +1,20 @@
+" === Settings ===
+source ~/.vim/settings.vim
+
+" === Plugin manager ===
+call plug#begin('~/.vim/plugged')
+source ~/.vim/plugins.vim
+call plug#end()
+
+" === Loading configurations ===
+for config in split(glob('~/.vim/plugins/*.vim'), '\n')
+    execute 'source' fnameescape(config)
+endfor
+
+" === Keymaps ===
+source ~/.vim/keymaps.vim
+
+" === Custom plugins ===
+for config in split(glob('~/.vim/custom/*.vim'), '\n')
+    execute 'source' fnameescape(config)
+endfor

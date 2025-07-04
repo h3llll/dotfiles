@@ -12,6 +12,7 @@
 !suckless
 !starship.toml
 !setup_new.sh
+!.vim
 
 !bash/**
 !bat/**
@@ -22,3 +23,6 @@
 !suckless/**
 !starship.toml/**
 !setup_new.sh/**
+!.vim/**
+.vim/plugged
+.vim/%*
