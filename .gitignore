@@ -13,6 +13,7 @@
 !starship.toml
 !setup_new.sh
 !.vim
+.vim/plugged
 
 !bash/**
 !bat/**
@@ -24,5 +25,5 @@
 !starship.toml/**
 !setup_new.sh/**
 !.vim/**
-.vim/plugged
+.vim/plugged/**
 .vim/%*
