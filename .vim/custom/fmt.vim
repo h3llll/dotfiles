@@ -1,8 +1,8 @@
-function! Format()
+function! Format(formatter)
     let l:cursor = getpos('.')
      
     if &filetype ==# 'c'
-        silent %!clang-format
+        execute 'silent! %!' . a:formatter
     endif
     
     call setpos('.', l:cursor)

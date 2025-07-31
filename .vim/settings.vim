@@ -12,3 +12,4 @@ set clipboard=unnamedplus
 set termguicolors
 set mouse=a
 
+let fmtr = "indent"

@@ -1,20 +1,20 @@
 # ~/.config/starship.toml
 
 # Global Configuration
-format = "in [$directory](bold #fabd2f)\n$git_branch [>](bold #fabd2f) "
+format = "in [$directory](bold #d8a657)\n$git_branch [>](bold #d8a657) "
 
 add_newline = true
 
 # Time
 [time]
 format = "[󱑃 $time]($style)"
-style = "bold #d79921"  # Gruvbox neutral yellow
+style = "bold #d8a657"  # Gruvbox neutral yellow
 use_12hr = true
 disabled = false
 
 # Directory Module
 [directory]
-style = "bold #fabd2f"  # Gruvbox bright yellow (accent)
+style = "bold #d8a657"  # Gruvbox bright yellow (accent)
 format = "$path"
 read_only = " "
 truncate_to_repo = true
@@ -24,12 +24,12 @@ disabled = false
 [git_branch]
 symbol = "  "
 format = "[$symbol$branch]($style)"
-style = "bold #fabd2f"
+style = "bold #d8a657"
 disabled = false
 
 # Sudo
 [sudo]
-style = "bold #cc241d"  # Gruvbox red for root privilege
+style = "bold #d8a657"  # Gruvbox red for root privilege
 disabled = false
 
 # Username

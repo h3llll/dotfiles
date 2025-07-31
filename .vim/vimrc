@@ -1,20 +1,23 @@
 " === Settings ===
-source ~/.vim/settings.vim
+let conf_dir = expand('~/.config/.vim')
+execute 'source ' . conf_dir . '/settings.vim'
 
 " === Plugin manager ===
-call plug#begin('~/.vim/plugged')
-source ~/.vim/plugins.vim
+call plug#begin(conf_dir . '/plugged')
+execute 'source ' . conf_dir . '/plugins.vim'
 call plug#end()
 
 " === Loading configurations ===
-for config in split(glob('~/.vim/plugins/*.vim'), '\n')
+for config in split(glob(conf_dir . '/plugins/*.vim'), '\n')
     execute 'source' fnameescape(config)
 endfor
 
 " === Keymaps ===
-source ~/.vim/keymaps.vim
+execute 'source ' . conf_dir . '/keymaps.vim'
 
 " === Custom plugins ===
-for config in split(glob('~/.vim/custom/*.vim'), '\n')
+for config in split(glob(conf_dir . '/custom/*.vim'), '\n')
     execute 'source' fnameescape(config)
 endfor
+
+hi Comment ctermfg=darkgray guifg=#5a5a5a cterm=NONE gui=NONE

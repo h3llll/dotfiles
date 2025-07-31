@@ -14,8 +14,16 @@ nnoremap <leader>fw :Rg<CR>
 " Search for line in current buffer
 nnoremap <leader>fl :Lines<CR>
 
+" LSP LIKE STUFF
 " fommarter
-nnoremap F			:call Format()<CR>
+nnoremap F :call Format(fmtr)<CR>
 
-" horver
-nnoremap <Leader>h :echo expand('<cword>')<CR>
+" jump to file
+nnoremap GF :cs find i <C-R>=expand("<cfile>")<CR><CR>
+
+" find symbol
+nnoremap GS :cs find s <C-R>=expand("<cword>")<CR><CR>
+
+" find def
+nnoremap GD :cs find g <C-R>=expand("<cword>")<CR><CR>
+

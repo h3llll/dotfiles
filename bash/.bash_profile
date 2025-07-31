@@ -1,2 +1,3 @@
-# Get the aliases and functions
-[ -f $HOME/.bashrc ] && . $HOME/.bashrc
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
